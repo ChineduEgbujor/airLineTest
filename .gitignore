@@ -1,0 +1,40 @@
+# Dependency directories (common for both frontend and backend)
+node_modules/
+
+# Environment configuration files (common, but you might have separate .env files for front and back)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files (common)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled output (if applicable to backend or any compiled frontend assets)
+/build/
+/dist/
+
+# Coverage directories (if using testing tools in both frontend and backend)
+coverage/
+.nyc_output/
+
+# Specific frontend and backend directories might have their own cache or build directories,
+# you can ignore them here if they are generated at the root, 
+# or handle it in their respective .gitignore files within frontend/ and backend/
+
+# Frontend-specific (if there are any root level frontend specific files, otherwise ignore this)
+ /frontend/build/
+ /frontend/node_modules/
+
+# Backend-specific (if there are any root level backend specific files, otherwise ignore this)
+ /backend/node_modules/
+ /backend/dist/
+
+# Other common ignores (applicable to both frontend and backend)
+.DS_Store
+*.log
+tmp/
+temp/
